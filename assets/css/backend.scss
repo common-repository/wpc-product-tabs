@@ -1,0 +1,332 @@
+.woost-tabs-wrapper {
+  background-color: #f7f7f7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.woost-tabs {
+  position: relative;
+}
+
+.woost-tabs .woost-tab {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.woost-tabs .woost-tab .woost-tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 40px 0 0;
+  border: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.woost-tabs .woost-tab .woost-tab-header:after {
+  content: "\f140";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font: normal 16px/40px dashicons;
+  position: absolute;
+  top: 0;
+  right: 0;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+}
+
+.woost-tabs .woost-tab.active .woost-tab-header:after {
+  content: "\f142";
+}
+
+.woost-tabs .woost-tab .woost-tab-content {
+  padding: 0 10px;
+  border-top: 1px solid #eee;
+  display: none;
+}
+
+.woost-tabs .woost-tab.active .woost-tab-content {
+  display: block;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .select2-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+  box-sizing: border-box !important;
+  display: inline-block !important;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost_apply_val_wrapper .select2-container {
+  margin-top: 10px;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line {
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px dashed #dddddd;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line:first-child {
+  border-top: none;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line .woost-tab-line-label {
+  width: 120px;
+  flex: 0 0 120px;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line .woost-tab-line-value {
+  flex-grow: 1;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line .woost-tab-line-value textarea {
+  float: none;
+  width: 100%;
+  min-height: 120px;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line label {
+  float: none;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.woost-tabs .woost-tab .woost-tab-content .woost-tab-line select, .woost-tabs .woost-tab .woost-tab-content .woost-tab-line input {
+  float: none;
+}
+
+.woocommerce_options_panel .woost-tabs .woost-tab .woost-tab-content .woost-tab-line.woost-tab-line-apply, .woocommerce_options_panel .woost-tabs .woost-tab .woost-tab-label-apply {
+  display: none !important;
+}
+
+.woocommerce_options_panel .woost-tabs .woost-tab .woost-tab-content .woost-tab-line.woost-tab-line-type {
+  margin-top: 0 !important;
+}
+
+.woost-tab-move {
+  cursor: move;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  text-align: center;
+  font-size: 0;
+}
+
+.woost-tab-move:before {
+  content: "\f545";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font: normal 12px/40px dashicons;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+}
+
+.woost-tab-label {
+  font-weight: 700;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+}
+
+.woost-tab-label-type, .woost-tab-label-apply {
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #eee;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.woost-tab-remove {
+  color: #ff4f3b;
+  text-decoration: underline;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.woost-tabs .woost-tab:hover .woost-tab-remove {
+  opacity: 1;
+  visibility: visible;
+}
+
+.woost-fields-label {
+  padding: 0 10px;
+  margin: 15px 0;
+  font-weight: 700;
+  border-left: 4px solid #0073aa;
+}
+
+.woost-fields {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+
+  .woost-field {
+    padding: 0;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .woost-field-head {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 40px;
+      margin: 0;
+      position: relative;
+      cursor: pointer;
+
+      &:before {
+        content: '\f142';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font: normal 12px/40px dashicons;
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-decoration: none !important;
+      }
+
+      .woost-field-title {
+        font-weight: 700;
+      }
+
+      .woost-field-key {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+        padding: 4px 10px;
+        background-color: #eeeeee;
+        border-radius: 3px;
+      }
+    }
+
+    .woost-field-body {
+      display: block;
+      padding: 10px;
+      border-top: 1px solid #eee;
+    }
+
+    textarea {
+      float: none;
+      width: 100%;
+      min-height: 120px;
+    }
+
+    &.woost-field-close {
+      .woost-field-head {
+        &:before {
+          content: '\f140';
+        }
+      }
+
+      .woost-field-body {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Settings */
+
+#woost_settings {
+  padding: 15px;
+}
+
+#woost_settings .woost-tabs-wrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  .woost-tabs-new {
+    input.button {
+      margin-left: 0;
+    }
+  }
+}
+
+#woost_settings .woost-tabs-global {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  a {
+    &:after {
+      margin-left: 5px;
+      content: '\f504';
+      font-family: dashicons;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-decoration: none !important;
+    }
+  }
+}
+
+#woost_settings .woost-overwrite {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 4px solid #0073aa;
+}
+
+#woost_settings .woost-overwrite .woost-overwrite-label {
+  font-weight: 700;
+}
+
+#woost_settings .woost-overwrite-items .woost-overwrite-item {
+  margin: 0 0 0 10px;
+  float: none;
+  width: auto;
+}
+
+.woost_tab a:before {
+  content: '\f510' !important;
+}
+
+.wpc-premium, .wpc-premium a {
+  color: #c9356e;
+}
